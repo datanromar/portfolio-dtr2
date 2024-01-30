@@ -1,4 +1,6 @@
-
+---
+import Boton from "./Boton.astro"
+---
 <header class="main-header">
     
         <a href="/">
@@ -8,8 +10,9 @@
         </a>
     
     <nav style="gap: .5rem">
-        <a style="padding: 0px 10px 0px 10px;" href="/quienes-somos">Quienes somos</a>
-        <a style="padding: 0px 10px 0px 10px;" href="/about">Acerca de</a>
+        <Boton href="/quienes-somos">Quien soy</Boton>
+        <Boton href="/about">Contacto</Boton>
+
     </nav>
 </header>
 
@@ -25,9 +28,5 @@
         background-repeat:no-repeat;
     }
 
-    a:link, a:visited, a:active {
-    text-decoration: none;
-    background: palegreen;
-    color: black;
-}
+
 </style>
