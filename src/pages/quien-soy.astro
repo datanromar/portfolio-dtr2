@@ -1,0 +1,123 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+    <div class="grid-container">
+        <div class="divuno">
+            <div class="imagenfondouno"></div>
+            <div class="overlay"></div>
+            <p class="texto">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Mollitia, quia quasi aut porro dolorem error repellendus ipsam
+                ex temporibus incidunt?
+            </p>
+        </div>
+        <div class="divdos">
+            <div class="imagenfondodos"></div>
+            <div class="overlay"></div>
+            <p class="texto">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Mollitia, quia quasi aut porro dolorem error repellendus ipsam
+                ex temporibus incidunt?</p>
+
+        </div>
+        <div class="divtres">
+            <div class="imagenfondotres"></div>
+            <div class="overlay"></div>
+            <p class="texto">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Mollitia, quia quasi aut porro dolorem error repellendus ipsam
+                ex temporibus incidunt?
+            </p>
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .grid-container {
+        display: grid;
+        grid-template: 250px / auto auto auto;
+        grid-gap: 80px;
+        background-color: #dfd6d600;
+        padding: 10px;
+    }
+
+    .divuno,
+    .divdos,
+    .divtres {
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .imagenfondouno {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .imagenfondodos,
+    .imagenfondotres {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .imagenfondouno {
+        background-image: url("public/yo.png");
+    }
+
+    .imagenfondodos {
+        background-image: url("public/yo2.png");
+    }
+
+    .imagenfondotres {
+        background-image: url("public/yo3.png");
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1f9bff;
+        transition: transform 0.3s ease;
+        transform-origin: bottom;
+        transform: translateY(100%);
+    }
+
+    .divuno:hover .overlay,
+    .divdos:hover .overlay,
+    .divtres:hover .overlay {
+        transform: translateY(0);
+        opacity: 0.7;
+        overflow: hidden;
+    }
+
+    .texto {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        max-width: 100%; /* ajusta según sea necesario */
+        padding: 0px; /* ajusta según sea necesario */
+        box-sizing: border-box;
+    }
+
+    .divuno:hover .texto,
+    .divdos:hover .texto,
+    .divtres:hover .texto {
+        opacity: 1;
+    }
+</style>

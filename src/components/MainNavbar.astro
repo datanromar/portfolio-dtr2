@@ -1,32 +1,34 @@
 ---
-import Boton from "./Boton.astro"
+import Boton from "./Boton.astro";
 ---
-<header class="main-header">
-    
-        <a href="/">
-            <h1 style="margin: 0px 0px 10px;">
-                Mi portafolio
-            </h1>
-        </a>
-    
-    <nav style="gap: .5rem">
-        <Boton href="/quienes-somos">Quien soy</Boton>
-        <Boton href="/about">Contacto</Boton>
 
+<header class="main-header">
+    <a href="/">
+        <img
+            class="nombre"
+            src="./public/name.webp"
+            alt="Daniel Atan Portfolio"
+            style="margin: 15px; max-width: 20%; min-width: 10%"
+        />
+    </a>
+
+    <nav style="gap: .8rem">
+        <Boton href="/quien-soy">Quien soy</Boton>
+        <Boton href="/contacto">Contacto</Boton>
     </nav>
 </header>
 
 <style>
+    .nombre:hover {
+        padding: 5px;
+        box-shadow: 0 0 2px 1px #1f9bff;
+    }
+
     .main-header {
         display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 30px;
-        background-image: url(https://shorturl.at/qAMQ3);
-        background-size:cover;
-        background-repeat:no-repeat;
+        padding: 10px;
     }
-
-
 </style>
