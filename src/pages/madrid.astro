@@ -1,0 +1,91 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+	<div class="container">
+
+        <div class="gallery">
+            <div class="image-container">
+                <img src="/photos/mad1.jpg" alt="Foto 1 Madrid">
+            </div>
+            <div class="image-container">
+                <img src="/photos/mad2.jpg" alt="Foto 2 Madrid">
+            </div>
+            <div class="image-container">
+                <img src="/photos/mad3.jpg" alt="Foto 3 Madrid">
+            </div>
+            <div class="image-container">
+                <img src="/photos/mad4.jpg" alt="Foto 4 Madrid">
+            </div>
+            <div class="image-container">
+                <img src="/photos/mad5.jpg" alt="Foto 5 Madrid">
+            </div>
+            <div class="image-container">
+                <img src="/photos/mad6.jpg" alt="Foto 6 Madrid">
+            </div>
+            <div class="image-container">
+                <img src="/photos/mad7.jpg" alt="Foto 7 Madrid">
+            </div>
+            <div class="image-container">
+                <img src="/photos/mad8.jpg" alt="Foto 8 Madrid">
+            </div>
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+
+
+	</div>
+</MainLayout>
+
+<style>
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.5rem;
+		color: white;
+		background-color: transparent;
+		border-color: rgb(255, 255, 255);
+		border-style: solid;
+		border-width: 0px;
+		text-align: center;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+			"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+			"Segoe UI Emoji", "Segoe UI Symbol";
+		position: relative;
+	}
+
+    .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image-container {
+    width: 240px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   filter: brightness(0.5);
+   transition: 0.3s;
+}
+
+.image-container img:hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   filter: brightness(1);
+}
+
+
+</style>

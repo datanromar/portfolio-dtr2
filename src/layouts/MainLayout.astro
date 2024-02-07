@@ -1,5 +1,6 @@
 ---
 import MainNavbar from '../components/MainNavbar.astro'
+import Footer from '../components/Footer.astro'
 ---
 <html lang="es">
 	<head>
@@ -7,6 +8,8 @@ import MainNavbar from '../components/MainNavbar.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<title>A mina güeb</title>
+		
+
 	</head>
 	<body>
 		<MainNavbar />  
@@ -14,9 +17,11 @@ import MainNavbar from '../components/MainNavbar.astro'
 		<slot />
 
 		<video autoplay muted loop plays-inline id="Video">
-			<source src="../public/videos/fondo2.mp4" type="video/mp4">
+			<source src="../videos/fondo2.mp4" type="video/mp4">
 		  </video>
 	
+		<Footer />
+
 	</body>
 
 <style>

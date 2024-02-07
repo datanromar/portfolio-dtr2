@@ -8,27 +8,27 @@ import MainLayout from "../layouts/MainLayout.astro";
             <div class="imagenfondouno"></div>
             <div class="overlay"></div>
             <p class="texto">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Mollitia, quia quasi aut porro dolorem error repellendus ipsam
-                ex temporibus incidunt?
+                Nací en Santiago de Compostela.
+                Moooola.
             </p>
         </div>
         <div class="divdos">
             <div class="imagenfondodos"></div>
             <div class="overlay"></div>
             <p class="texto">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Mollitia, quia quasi aut porro dolorem error repellendus ipsam
-                ex temporibus incidunt?</p>
+                Mi formación se centró en potenciar mi pasión por el audiovisual.
+            Graduado en <b>Realización de Proyectos Audiovisuales y Espectáculos</b> y también
+        en <b>Iluminación, Captación y Tratamiento de la Imagen</b> en la Escola de Imaxe e Son
+        de A Coruña.</p>
 
         </div>
         <div class="divtres">
             <div class="imagenfondotres"></div>
             <div class="overlay"></div>
             <p class="texto">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Mollitia, quia quasi aut porro dolorem error repellendus ipsam
-                ex temporibus incidunt?
+                Formé parte del equipo del portal de información efe.uno como redactor y fotógrafo.
+                He colaborado con: La Voz de Galicia, Atlántico Diario, Faro de Vigo, El Acelerador,
+                AutoHebdo Sport, Revista TodoRacing, CERX, Diariomotor Competición...
             </p>
         </div>
     </div>
@@ -67,15 +67,18 @@ import MainLayout from "../layouts/MainLayout.astro";
     }
 
     .imagenfondouno {
-        background-image: url("public/yo.png");
+        background-image: url("/yo.png");
     }
-
+    
     .imagenfondodos {
-        background-image: url("public/yo2.png");
+        background-image: url("/yo2.png");
     }
-
+    
     .imagenfondotres {
-        background-image: url("public/yo3.png");
+        background-image: url("/yo3.png");
+        /* background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat; */
     }
 
     .overlay {
@@ -103,7 +106,7 @@ import MainLayout from "../layouts/MainLayout.astro";
             "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol";
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;

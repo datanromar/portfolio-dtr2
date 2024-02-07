@@ -1,10 +1,12 @@
-<div class="card">
-
-    <strong>BERLIN</strong>
-
-    <span>FORMULA E</span>
-    <p class="texto-menor">🥨 '22</p>
-</div>
+<a href="/barcelona">
+    <div class="card">
+    
+        <strong>MONACO</strong>
+    
+        <span>FORMULA E</span>
+        <p class="texto-menor2">🚤 '23</p>
+    </div>
+</a>
 
 <style>
     .card {
@@ -12,11 +14,12 @@
         --hover-bg: #1f9bff;
         --hover-text: #ffffff;
 
-        
-        max-width: 23ch;
+        width: 200px;
+        height: 100px;
+ /*        max-width: 23ch; */
         text-align: center;
-        padding: 1.5em;
-        padding-block: 1em;
+        padding: .8em;
+        padding-block: 1.2em;
         border-radius: 5px;
         position: relative;
         overflow: hidden;
@@ -43,7 +46,7 @@
 
     .card > strong {
         display: block;
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         letter-spacing: -0.035em;
     }
 
@@ -67,7 +70,11 @@
         font-size: 2em;
     }
 
-
+    a {
+        text-decoration: none;
+        color: white;
+       
+    }
 
     .card:hover {
         background: var(--hover-bg);
@@ -78,17 +85,18 @@
         opacity: 0;
     }
 
-    .texto-menor {
+    .texto-menor2 {
     font-size: 0.8em;
     margin-top: 5px; 
     color: #ffffff;
     font-weight: bold;
     opacity: 0; 
-    transition: opacity 4.4s cubic-bezier(.17,.67,.57,1.08);
+    transition: opacity 4.4s cubic-bezier(.17,.67,.57,1.08); 
 }
 
-.card:hover .texto-menor {
+.card:hover .texto-menor2 {
     opacity: 1; 
 }
+
 
 </style>
