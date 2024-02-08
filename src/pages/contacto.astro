@@ -6,7 +6,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 	<div class="contenedor">
 		<div class="divuno">
 			<p class="texto">
-				¿Quieres ponerte en contacto conmigo para cualquier cosa? Te lo pongo fácil. 
+				¿Quieres ponerte en contacto conmigo para cualquier cosa? Te lo
+				pongo fácil.
 			</p>
 
 			<div class="contacto">
@@ -37,7 +38,12 @@ import MainLayout from "../layouts/MainLayout.astro";
 						required
 						placeholder="¿Qué quieres contarme?"></textarea>
 
-					<input class="botonsubmit" type="submit" value="Enviar" />
+					<input
+						class="botonsubmit"
+						name="enviar"
+						type="submit"
+						value="Enviar"
+					/>
 				</form>
 			</div>
 		</div>
@@ -76,8 +82,6 @@ import MainLayout from "../layouts/MainLayout.astro";
 		border-radius: 1rem;
 		border: 0px;
 	}
-
-	
 
 	.contacto input,
 	.contacto textarea {
